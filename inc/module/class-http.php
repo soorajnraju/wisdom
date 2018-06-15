@@ -20,8 +20,16 @@ class Http{
 				$page = HOME.'views/404.php';
 			}
 			include $page;
-			
+		}else{
+			$page = HOME.'views/index';
+			$ext = ['.php', '.html'];
+			if(file_exists($page.$ext[0])){
+				$page = $page.$ext[0];
+			}elseif(file_exists($page.$ext[1])){
+				$page = $page.$ext[1];
+			}
 		}
+		include $page;
 	}
 	
 	function post(){
