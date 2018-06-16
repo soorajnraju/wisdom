@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="<?php echo $loader->config['site_url'].'assets/css/style.css'?>">

@@ -12,8 +12,8 @@ class Loader{
 	function __construct($load=false){
 		if($load){
 			$pack = array(
-				HOME.'inc/module/class-http.php',
-				HOME.'config/loader.php'
+				HOME.'config/loader.php',
+				HOME.'inc/module/class-http.php'
 			);
 			$this->load($pack);
 			if(isset($this->files) && !empty($this->files)){
@@ -44,6 +44,6 @@ class Loader{
 	
 	function run()
 	{
-		$this->http = new Module\Http();
+		$this->http = new Module\Http($this);
 	}
 }

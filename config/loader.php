@@ -8,6 +8,8 @@
 
 $this->files = [
 	'list' => [
-		//HOME.'lib/hello.php'
+		//HOME.'lib/hello.php',
+		HOME.'/config/site_config.php',
+		HOME.'/inc/functions/global_functions.php'
 	]
 ];
