@@ -1,0 +1,8 @@
+{
+    "name": "soorajnraju/wisdom",
+    "description": "Its a very simple PHP Web Framework and Its under development, so don't use in production environment",
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "another-vendor/package": "1.*"
+    }
+}
