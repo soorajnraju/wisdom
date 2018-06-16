@@ -1,5 +1,6 @@
 {
     "name": "soorajnraju/wisdom",
+	"version": "dev-master",
     "type": "framework",
     "description": "Its a very simple PHP Web Framework and Its under development, so don't use in production environment.",
     "keywords": ["php","framework"],
