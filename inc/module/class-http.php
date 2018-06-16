@@ -3,7 +3,6 @@
 namespace Wisdom\Module;
 
 class Http{
-	private $loader;
 	
 	function __construct($loader){
 		$this->run($loader);
