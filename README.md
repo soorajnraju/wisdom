@@ -15,5 +15,5 @@ Install using composer.
 
 ```sh
 $ cd wisdom
-$ composer require soorajnraju/wisdom
+$ ccomposer require "soorajnraju/wisdom @dev"
 ```
