@@ -3,6 +3,7 @@
 namespace Wisdom\Module;
 
 class Http{
+	private $loader;
 	
 	function __construct($loader){
 		$this->run($loader);
@@ -29,7 +30,7 @@ class Http{
 				$page = $page.$ext[1];
 			}
 		}
-		include $page;
+
 		if(isset($_POST['action'])){
 			$this->filter_post();
 			if(file_exists(HOME.'logic/'.$_POST['action'].'.php')){
@@ -38,6 +39,8 @@ class Http{
 				echo "logic file not found";
 			}
 		}
+		
+		include $page;
 		exit;
 	}
 	
