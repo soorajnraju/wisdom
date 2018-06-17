@@ -27,7 +27,6 @@ class Http {
             } else {
                 $page = HOME . 'html/404.php';
             }
-            include $page;
         } else {
             $page = HOME . 'html/index';
             $ext = ['.php', '.html'];
