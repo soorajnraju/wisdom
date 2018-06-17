@@ -1,3 +1,3 @@
 <?php
 
-$this->db = new MysqliDb ('localhost', 'root', 'root', 'test');
+$this->db = new MysqliDb('localhost', 'root', 'root', 'test');
