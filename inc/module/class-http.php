@@ -47,9 +47,13 @@ class Http {
                 echo "logic file not found";
             }
         }
-
+        $loader->http = $this;
+        //load terminator script
+        if (file_exists(HOME . 'lib/terminator.php')) {
+            $loader->load(HOME . 'lib/terminator.php');
+        }
         include $page;
-        exit;
+        return $loader;
     }
 
     function filter_get() {
@@ -65,12 +69,13 @@ class Http {
     }
 
     /**
-     * 
      * @param object $loader
+     * @var object $this->loader
+     * @uses object = new Class($http->loader)
      */
     function run($loader) {
         $this->filter_get();
-        $this->get($loader);
+        $this->loader = $this->get($loader);
     }
 
 }

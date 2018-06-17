@@ -54,7 +54,7 @@ class Loader {
      * init function 
      */
     function run() {
-        new Module\Http($this);
+        $http = new Module\Http($this);
     }
 
 }
