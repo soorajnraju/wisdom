@@ -2,7 +2,7 @@
 
 /**
  * Version: 1.0
- * Author: soorajnraju
+ * Author: Sooraj N Raju
  * Website: https://soorajnraju.com/
  * Build: 180615
  */
