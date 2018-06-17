@@ -5,7 +5,7 @@
 Wisdom is a simple PHP Web Framework, which is still in development.
 
   - Simple
-  - Customisable
+  - Customization
   - Small in size
 ### Installation
 
