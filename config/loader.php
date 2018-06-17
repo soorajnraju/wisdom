@@ -1,10 +1,8 @@
 <?php
 
 /**
- * Load custom php files(modules)
- * Use absolute file path(HOME)
- * @$this: Loader instance
- * @modules: [] 
+ * Load custom php files
+ * Use absolute file path using conctant HOME 
  */
 $this->files = [
     'list' => [

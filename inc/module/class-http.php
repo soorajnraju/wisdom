@@ -4,10 +4,18 @@ namespace Wisdom\Module;
 
 class Http {
 
+    /**
+     * 
+     * @param object $loader
+     */
     function __construct($loader) {
         $this->run($loader);
     }
 
+    /**
+     * 
+     * @param object $loader
+     */
     function get($loader) {
         if (isset($_GET['page'])) {
             $page = HOME . 'html/' . $_GET['page'];
@@ -43,11 +51,6 @@ class Http {
         exit;
     }
 
-    function run($loader) {
-        $this->filter_get();
-        $this->get($loader);
-    }
-
     function filter_get() {
         foreach ($_GET as $k => $v) {
             $_GET[$k] = filter_user_input($v);
@@ -58,6 +61,15 @@ class Http {
         foreach ($_POST as $k => $v) {
             $_POST[$k] = filter_user_input($v);
         }
+    }
+
+    /**
+     * 
+     * @param object $loader
+     */
+    function run($loader) {
+        $this->filter_get();
+        $this->get($loader);
     }
 
 }

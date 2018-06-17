@@ -5,10 +5,15 @@ namespace Wisdom;
 class Loader {
 
     /**
-     * @$load: files[] contains file path to load 
+     *
+     * @var array $files 
      */
     private $files;
 
+    /**
+     * 
+     * @param boolean $load
+     */
     function __construct($load = false) {
         if ($load) {
             $pack = array(
@@ -26,10 +31,11 @@ class Loader {
         }
     }
 
+    /**
+     * 
+     * @param type $load
+     */
     function load($load) {
-        /**
-         * Load required files.
-         */
         if (!empty($load))
             if (is_array($load)) {
                 foreach ($load as $k => $v) {
@@ -41,7 +47,10 @@ class Loader {
                 }
             }
     }
-
+    
+    /**
+     * init function 
+     */
     function run() {
         $this->http = new Module\Http($this);
     }
