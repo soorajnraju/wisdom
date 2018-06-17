@@ -1,4 +1,9 @@
 .register{
-	margin-top: 15%;
-	text-align: center;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.register li{
+    display: inline-block;
+    padding-right: 35px;
 }
