@@ -2,6 +2,8 @@
 
 namespace Wisdom\Module;
 
+defined('HOME') or exit('No direct access is not allowed');
+
 class Http {
 
     /**

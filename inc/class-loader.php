@@ -2,6 +2,8 @@
 
 namespace Wisdom;
 
+defined('HOME') or exit('No direct access is not allowed');
+
 class Loader {
 
     /**
@@ -47,7 +49,7 @@ class Loader {
                 }
             }
     }
-    
+
     /**
      * init function 
      */
