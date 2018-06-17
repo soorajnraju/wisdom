@@ -7,7 +7,7 @@
  * Build: 180615
  */
 define('HOME', dirname(__FILE__) . '/');
-
+error_reporting(E_ALL);
 /**
  * Composer auto load
  */
