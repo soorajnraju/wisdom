@@ -9,7 +9,7 @@ Wisdom is a simple PHP Web Framework, which is still in development.
   - Small in size
 ### Installation
 
-Wisdom requires [PHP] v5.6||v7.0+ to run.
+Wisdom requires [PHP] v5.6 || v7.0+ to run.
 
 Install using composer.
 
